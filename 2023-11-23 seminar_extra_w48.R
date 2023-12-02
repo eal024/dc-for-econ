@@ -5,7 +5,9 @@ library(tidyverse)
 library(tidytext)
 
 # data
-df <- vroom::vroom("data/speech1516.csv") |>
+
+Sys.setlocale("LC_CTYPE")
+df <- vroom::vroom("data/speech1516.csv" ) |>
     filter( language == "nob")
 
 
