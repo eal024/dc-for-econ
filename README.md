@@ -1,6 +1,6 @@
 # Data Science for Economists
 
-Consepts and code from the course [ECON4170](https://www.uio.no/studier/emner/sv/oekonomi/ECON4170/index.html)
+Concepts and code from the course [ECON4170](https://www.uio.no/studier/emner/sv/oekonomi/ECON4170/index.html)
 
 ### Numerical methods
 #### Solving equations
