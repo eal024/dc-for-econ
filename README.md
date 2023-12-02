@@ -7,4 +7,4 @@ Concepts and code from the course [ECON4170](https://www.uio.no/studier/emner/sv
   - [Bisection](https://github.com/eal024/dc-for-econ/blob/main/2023-11-19%20numerical_methods1.R) 
 
 ### Machine Learning
-- [Basic set up](https://github.com/eal024/dc-for-econ/blob/main/tidymodel_set_up.R) 
+- [tidymodels, the basic set up](https://github.com/eal024/dc-for-econ/blob/main/tidymodel_set_up.R) 
