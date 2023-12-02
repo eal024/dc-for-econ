@@ -61,32 +61,3 @@ mean(y)*1
 
 # The standard devations
 sd(y)/num_p^0.5
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
