@@ -66,10 +66,51 @@ graph +
     )
 
 
-# c) Return to saving is random
+# c) Assume now that the return to savings is random. Specifically, 1 unit saved in the first period
+#    yields a total return 𝑅, so second period consumption is 𝑐2 = 𝑅(𝑌 − 𝑐1). Assume that 𝑅
+#    follow an exponential distribution with rate 𝜆 = 0.9. Use Monte Carlo integration to find the
+#    expected utility from the choice 𝑐1 = 5.
+
 
 # Cunsum pr. 2, with random return of saving R
-R <- function( lambda = 0.9 ){ rexp(n = 1, rate  = lambda)}
+R <- function( lambda = 0.9, n ){ rexp(n = n, rate  = lambda)}
 
-fn_c2 <- function(c1, R = R(), Y){ R*(Y-c1)}
+Rate <- R(n = 1000)
+
+# Cunsum pr. 2
+fn_c2 <- function(c1, r, Y){ Rate*(Y-c1)}
+
+# Expected return
+Eu <- function(c1){
+    U <- utility(c1, c2 = fn_c2(c1 = c1, r = R(), Y = 10), g = 0.4, B = 0.96)
+    return(-mean(U))
+}
+
+# d) Numerical maximization value of c1
+
+opti <- optim(par = 2, fn = Eu, method = "BFGS")
+
+# The optimum:
+opti$par
+
+
+opti <- list()
+
+for( i in 1:10){
+        
+    # Expected return
+    Eu <- function(c1){
+    
+    U <- utility(c1, c2 = fn_c2(c1 = c1, r = R(), Y = 10), g = 0.4, B = 0.96)
+    return(-mean(U))
+    
+    }
+
+    opti[i] <- optim(par = 2, fn = Eu, method = "BFGS")$par
+
+}
+opti |> unlist()
+
+
+
 
