@@ -11,3 +11,6 @@ Concepts and code from the course [ECON4170](https://www.uio.no/studier/emner/sv
 
 ### Machine Learning
 - [tidymodels, the basic set up](https://github.com/eal024/dc-for-econ/blob/main/tidymodel_set_up.R)
+
+#### Models
+- [Random Forest](https://github.com/eal024/dc-for-econ/blob/main/random_forest.R) 
