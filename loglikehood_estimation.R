@@ -65,4 +65,5 @@ x <- data$speed
 glm(y~x,family="poisson")
 
 
-
+# Explain briefly how the chosen optimization algorithm works.
+# https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/optim
