@@ -11,6 +11,7 @@ Concepts and code from the course [ECON4170](https://www.uio.no/studier/emner/sv
  - [Derivation]()
  - [Integration](https://github.com/eal024/dc-for-econ/blob/main/integration.R)
  - [Eq]()
+ - [Log-likelihood estimation (Poisson distribution)]()
    
 
 ### Machine Learning
