@@ -19,3 +19,5 @@ Concepts and code from the course [ECON4170](https://www.uio.no/studier/emner/sv
 
 #### Models
 - [Random Forest (regression)](https://github.com/eal024/dc-for-econ/blob/main/random_forest.R) 
+- [Lasso (regression)](https://github.com/eal024/dc-for-econ/blob/main/Lasso.R)
+- [Lasso tuning (regression)](https://github.com/eal024/dc-for-econ/blob/main/lasso_tuning.R)
