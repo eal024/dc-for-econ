@@ -73,7 +73,7 @@ xgb_tuned <-
         wf,
         resamples = vb_folds,
         grid = xgb_grid
-    )
+      )
 
 
 xgb_tuned
@@ -83,10 +83,11 @@ xgb_tuned
 collect_metrics(xgb_tuned) |> 
     filter(.metric == "rmse") %>%
     select(mean, mtry, min_n) %>%
-    pivot_longer(mtry:min_n,
-               values_to = "value",
-               names_to = "parameter"
-               ) |> 
+    pivot_longer(
+      mtry:min_n,
+      values_to = "value",
+      names_to = "parameter"
+       ) |> 
     ggplot( aes( value, mean, color = parameter) ) + 
     geom_point(size = 3) + 
     facet_wrap(~parameter, scales = "free_x") +
