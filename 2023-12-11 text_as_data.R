@@ -58,12 +58,11 @@ word_to_cloud <- df_long2 |>
 
 
 wordcloud( word_to_cloud$word_stem  |> head(200), 
-     word_to_cloud$freq  |> head(200),
-     random.order = F,
-     rot.per = .00,
-     max.words = 100,
-     min.freq = 0.1,
-     
+    word_to_cloud$freq  |> head(200),
+    random.order = F,
+    rot.per = .00,
+    max.words = 100,
+    min.freq = 0.1,
 )
 
 # 6) Comparing the occurrence of words between Høyre and AP
@@ -164,3 +163,8 @@ hoyre_sentiemnt |>
 
 
 # Machine learning model
+
+# 
+speech |> 
+    select(id, party_name, text) |> 
+    

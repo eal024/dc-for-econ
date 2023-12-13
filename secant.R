@@ -1,38 +1,27 @@
 
+## Test function. Obs intercetion with y = 0 in two points
+test_function <- function(x){ (x^2 + 2*x -1) }
 
-# 2) Solving equations. Numerical algorithm
+fn_secant <- function(f, x0, x1, maxit = 100, eps = 0.001){
 
-# Secant
+    # Start with two points x0,x1
+    xn = x1
+    xn0 = x0 
+    itr = 0
+    d = 100
+    # Find a gess 
+    while( d > eps ) {
+        xn1 = xn - ( (xn-xn0)/(f(xn)-f(xn0)) )*f(xn)
 
-fn_descant <- function(x0, x1, f, error = 0.005, max_rep = 15){
-
-    # Start points
-    xn_1 <- x0 
-    xn   <- x1
-
-    i <- 0    # Counting iterations
-    e <- 100  # Error start with a large value 
-
-
-    while( i < max_rep |  e > error )   { 
-        
-        # The next guess
-        x1 = xn - ((xn-xn_1)/(f(xn)-f(xn_1)))*f(xn) 
-
-        xn_1 <- xn
-        xn <- x1
-
-        e <- abs(f(x1)) # Error: should be closs to 0 to stop
-        i <- i + 1
+        d = abs( xn1 - xn)  # Calculate the diff between iterreations
+        itr = itr + 1
+        xn0 = xn
+        xn = xn1
     }
-    x1
+
+    return(xn1)
 }
 
-# Example of use
-market <- function(p, s = 3 ) { 7 - p - log(p) - s }
+fn_secant( f = test_function, x0 = -4, x1 = -1, maxit = 10)
 
-# Give the value where the eq. is 0
-fn_descant(x0 = 0.01, x1 = 19, f = market, error = 0.000001, max_rep = 4)
 
-# Testing
-market( p = 2.926271)
