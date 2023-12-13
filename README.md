@@ -19,7 +19,11 @@ Concepts and code from the course [ECON4170](https://www.uio.no/studier/emner/sv
 - [Compare models](https://github.com/eal024/dc-for-econ/blob/main/comparing_models.R)
 
 #### Models
-- [Random Forest (regression)](https://github.com/eal024/dc-for-econ/blob/main/random_forest.R) 
-- [Lasso (regression)](https://github.com/eal024/dc-for-econ/blob/main/Lasso.R)
-- [Lasso tuning (regression)](https://github.com/eal024/dc-for-econ/blob/main/lasso_tuning.R)
+##### Regression
+- [Random Forest](https://github.com/eal024/dc-for-econ/blob/main/random_forest.R) 
+- [Lasso](https://github.com/eal024/dc-for-econ/blob/main/Lasso.R)
+- [Lasso tuning](https://github.com/eal024/dc-for-econ/blob/main/lasso_tuning.R)
 - [xgt boost](https://github.com/eal024/dc-for-econ/blob/main/xgboost.R)
+
+##### Classification problem
+- [xgt boost, case: Norwegian parliament speeches](textclassification_xgboost.R)
