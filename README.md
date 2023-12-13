@@ -4,14 +4,14 @@ Concepts and code from the course [ECON4170](https://www.uio.no/studier/emner/sv
 
 ### Numerical methods
 #### Solving equations
-  - [Bisection](https://github.com/eal024/dc-for-econ/blob/main/secant.R)
+  - [Desection](https://github.com/eal024/dc-for-econ/blob/main/desecant.R)
   - [Secant](https://github.com/eal024/dc-for-econ/blob/main/secant.R)
   - [Newton](https://github.com/eal024/dc-for-econ/blob/main/newton.R)
 
 #### Derivation and integration
  - [Derivation]()
  - [Integration](https://github.com/eal024/dc-for-econ/blob/main/integration.R)
- - [Equations]()
+ - [Equations](https://github.com/eal024/dc-for-econ/blob/main/derivaton.R)
  - [Log-likelihood estimation (Poisson distribution)](https://github.com/eal024/dc-for-econ/blob/main/loglikehood_estimation.R)
    
 
