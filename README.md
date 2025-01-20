@@ -4,6 +4,7 @@ Concepts and code related to ML, text analysis, and LLM.
 Some code and scripts are from the course [ECON4170](https://www.uio.no/studier/emner/sv/oekonomi/ECON4170/index.html)
 
 ### Numerical methods
+
 #### Solving equations
   - [Desection](https://github.com/eal024/dc-for-econ/blob/main/desecant.R)
   - [Secant](https://github.com/eal024/dc-for-econ/blob/main/secant.R)
@@ -29,3 +30,10 @@ Some code and scripts are from the course [ECON4170](https://www.uio.no/studier/
 
 ##### Classification problem
 - [xgt boost, case: Norwegian parliament speeches](textclassification_xgboost.R)
+
+
+### [Tidy modeling with R](https://www.tmwr.org/): Go through examples and concepts from the book.
+
+#### Modeing Basic
+- [Chapter 4](https://www.tmwr.org/ames):the Ames Housing data. 
+
