@@ -36,4 +36,6 @@ Some code and scripts are from the course [ECON4170](https://www.uio.no/studier/
 
 #### Modeing Basic
 - [Chapter 4](https://www.tmwr.org/ames):the Ames Housing data. 
+- [Chapter 5 spliting the data](https://www.tmwr.org/splitting): How to split the data into train, test, validation
+- [Chapter 6 fitting Models (parsnip)](https://www.tmwr.org/models)
 
