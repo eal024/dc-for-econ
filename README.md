@@ -34,8 +34,8 @@ Some code and scripts are from the course [ECON4170](https://www.uio.no/studier/
 
 ### [Tidy modeling with R](https://www.tmwr.org/): Go through examples and concepts from the book.
 
-#### Modeing Basic
-- [Chapter 4](https://www.tmwr.org/ames):the Ames Housing data. 
-- [Chapter 5 spliting the data](https://www.tmwr.org/splitting): How to split the data into train, test, validation
-- [Chapter 6 fitting Models (parsnip)](https://www.tmwr.org/models)
+#### Modeling Basic
+- [Chapter 4:](https://www.tmwr.org/ames) The Ames Housing data. 
+- [Chapter 5 spliting the data:](https://www.tmwr.org/splitting) Spliting the data into train, test, validation set.
+- [Chapter 6 fitting Models (parsnip):](https://www.tmwr.org/models). Select enging, fit and predict. The basic
 
