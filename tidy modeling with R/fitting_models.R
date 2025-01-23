@@ -45,3 +45,22 @@ tidy(lm_form_fit) # broom pacakges
 
 ## 6.3 Make prediction
 
+# Predict data based on
+model_pred <- predict( 
+    lm_form_fit,
+    new_data = ames_test |> slice(1:5) 
+    )
+
+# The function allways return eq. number of rows as input
+ames_test |> 
+    select( Sale_Price) |>
+    slice(1:5) |>  
+    bind_cols(
+        model_pred
+    ) |> 
+    # Adding 95% prediction intervals to the result
+    bind_cols(
+        predict( lm_form_fit, ames_test |> slice(1:5), type = "pred_int")
+    )
+
+# Adding from the parsnip pacakges: parsnip_addin()

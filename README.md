@@ -32,10 +32,11 @@ Some code and scripts are from the course [ECON4170](https://www.uio.no/studier/
 - [xgt boost, case: Norwegian parliament speeches](textclassification_xgboost.R)
 
 
-### [Tidy modeling with R](https://www.tmwr.org/): Go through examples and concepts from the book.
+### [Tidy modeling with R](https://www.tmwr.org/): Go through code, examples and concepts from the book.
 
 #### Modeling Basic
 - [Chapter 4:](https://www.tmwr.org/ames) The Ames Housing data. 
 - [Chapter 5 spliting the data:](https://www.tmwr.org/splitting) Spliting the data into train, test, validation set.
 - [Chapter 6 fitting Models (parsnip):](https://www.tmwr.org/models). Select enging, fit and predict. The basic
-
+- [Chapter 7 workflow:](https://www.tmwr.org/workflows). Organizing the steps in the modeling process.
+- [Chapter 8 Feature Engineering with recipes:](https://www.tmwr.org/recipes)
