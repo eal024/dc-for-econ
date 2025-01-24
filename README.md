@@ -40,3 +40,5 @@ Some code and scripts are from the course [ECON4170](https://www.uio.no/studier/
 - [Chapter 6 fitting Models (parsnip):](https://www.tmwr.org/models). Select enging, fit and predict. The basic
 - [Chapter 7 workflow:](https://www.tmwr.org/workflows). Organizing the steps in the modeling process.
 - [Chapter 8 Feature Engineering with recipes:](https://www.tmwr.org/recipes)
+
+#### 
